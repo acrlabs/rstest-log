@@ -1,0 +1,28 @@
+[package]
+name = "rstest-log"
+version = "0.1.0"
+authors = ["David R. Morrison <drmorr@appliedcomputing.io>"]
+edition = "2024"
+rust-version = "1.86"
+license = "MIT"
+readme = "README.md"
+description = "A wrapper around the test_log crate that supports rstest"
+
+[features]
+default = ["log", "color"]
+trace = ["test-log/trace"]
+log = ["test-log/log"]
+color = ["test-log/color"]
+
+[workspace]
+members = ["macros"]
+
+[dependencies]
+rstest-log-macros = { path = "macros", version = "0.1.0" }
+test-log = "0.2.17"
+
+[dev-dependencies]
+logging = { version = "0.4.8", package = "log" }
+rstest = "0.25.0"
+tokio = { version = "1.0", default-features = false, features = ["rt-multi-thread", "macros"] }
+tracing = "0.1.20"
