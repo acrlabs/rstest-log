@@ -1,9 +1,9 @@
 [package]
 name = "rstest-log"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["David R. Morrison <drmorr@appliedcomputing.io>"]
-edition = "2024"
-rust-version = "1.86"
+edition = "2021"
+rust-version = "1.71"
 license = "MIT"
 readme = "README.md"
 description = "A wrapper around the test_log crate that supports rstest"
@@ -12,7 +12,7 @@ description = "A wrapper around the test_log crate that supports rstest"
 members = ["macros"]
 
 [dependencies]
-rstest-log-macros = { path = "macros", version = "0.1.1" }
+rstest-log-macros = { path = "macros", version = "0.2.0" }
 
 [dev-dependencies]
 logging = { version = "0.4.8", package = "log" }

@@ -2,8 +2,8 @@ use proc_macro::TokenStream;
 use proc_macro2::TokenStream as Tokens;
 use quote::quote;
 use syn::{
-    ItemFn,
     parse_macro_input,
+    ItemFn,
 };
 
 

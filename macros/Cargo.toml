@@ -1,9 +1,9 @@
 [package]
 name = "rstest-log-macros"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["David R. Morrison <drmorr@appliedcomputing.io>"]
-edition = "2024"
-rust-version = "1.86"
+edition = "2021"
+rust-version = "1.71"
 license = "MIT"
 description = "Proc macros for the rstest-log crate"
 
